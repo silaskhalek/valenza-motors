@@ -11,7 +11,7 @@ import { useIntroPhase } from "../intro/IntroProvider";
 type Props = { total: number; marcas: { marca: string; modelos: string[] }[] };
 
 /** Levemente acelerado: o drift fica mais enérgico sem parecer "fast-forward". */
-const HERO_SPEED = 1.7;
+const HERO_SPEED = 2;
 
 export function Hero({ total, marcas }: Props) {
   const root = useRef<HTMLElement>(null);
